@@ -1,0 +1,50 @@
+/* Картинка меняется вместе с размером окна */
+img {
+  max-width: 100%;
+}
+
+/* Версия для телефона */
+@media (max-width: 767px) {
+  .poster {
+    flex-direction: column;
+  }
+
+  .photo {
+    flex: none;
+    height: 440px;
+  }
+
+  .info {
+    flex: none;
+    min-width: 0;
+    min-height: 400px;
+    padding: 20px;
+  }
+
+  .header {
+    font-size: 11px;
+  }
+
+  .words {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 35px 0;
+  }
+
+  .words p {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .words .second,
+  .words .third,
+  .words .fourth {
+    margin-left: 0;
+  }
+
+  .bottom h1 {
+    font-size: 100px;
+  }
+}
